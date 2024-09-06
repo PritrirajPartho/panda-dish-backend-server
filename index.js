@@ -13,6 +13,23 @@ const dishes = require('./datas/dishes.json');
 
 
 
+// data using is start here....
+app.get('/review', (req, res) =>{
+    res.send(review);
+ })
+
+app.get('/formulas', (req, res) =>{
+    res.send(dishesFormula);
+ })
+
+app.get('/dishes', (req, res) =>{
+    res.send(dishes);
+ })
+ 
+
+
+
+
 //Example part start to here........
 app.get('/', (req, res) => {
     res.send('panda-dish')
